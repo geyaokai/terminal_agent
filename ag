@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# --- 重要：请修改为你的绝对路径 ---
+AGENT_DIR="/home/gyk/code/terminal_agent" 
+# 例如: AGENT_DIR="/home/username/projects/terminal_agent"
+
+# 激活虚拟环境
+source "$AGENT_DIR/.venv/bin/activate"
+
+# 执行核心 Python 脚本，并将所有命令行参数 ($@) 传递给它
+python3 "$AGENT_DIR/agent_core.py" "$@"
+
+# (可选) 你可以取消下面的注释，在使用后自动退出虚拟环境
+# deactivate
