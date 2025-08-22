@@ -45,7 +45,8 @@ def run_one_shot_mode(agent) -> None:
 
 
 def run_interactive_mode(agent) -> None:
-    print("已进入交互式对话模式。输入 'exit'、'quit'、Ctrl+C 或 Ctrl+D 退出。")
+    print("您好！我是您的Shell专家")
+    print("输入 'exit'、'quit'、Ctrl+C 或 Ctrl+D 退出。")
     print("使用 -i <文件路径> 来载入图片或代码文件 (支持拖拽文件到终端)。")
     chat = agent.start_chat()
 

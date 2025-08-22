@@ -17,3 +17,8 @@ def load_api_key() -> str:
 def get_model_name(default: str = "gemini-2.5-flash") -> str:
     """Get model name from env, falling back to default."""
     return os.getenv("GEMINI_MODEL", default)
+
+
+def get_system_prompt() -> str:
+    """Get system prompt from env, or None if not set."""
+    return os.getenv("SYSTEM_PROMPT")
