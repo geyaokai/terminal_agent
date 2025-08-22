@@ -7,8 +7,8 @@ AGENT_DIR="/home/gyk/code/terminal_agent"
 # 激活虚拟环境
 source "$AGENT_DIR/.venv/bin/activate"
 
-# 执行核心 Python 脚本，并将所有命令行参数 ($@) 传递给它
-python3 "$AGENT_DIR/agent_core.py" "$@"
+# 执行新的入口脚本 main.py，并将所有命令行参数 ($@) 传递给它
+python3 "$AGENT_DIR/main.py" "$@"
 
 # (可选) 你可以取消下面的注释，在使用后自动退出虚拟环境
 # deactivate

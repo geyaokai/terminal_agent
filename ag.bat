@@ -8,4 +8,4 @@ rem cd /d 命令可以确保跨驱动器（从 C: 切换到 D:）也能成功
 cd /d %AGENT_DIR%
 
 rem --- 现在，uv run 会在正确的项目目录中执行，从而找到 .venv ---
-uv run --python 3.10 python agent_core.py %*
+uv run --python 3.10 python main.py %*
