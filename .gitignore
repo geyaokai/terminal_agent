@@ -1,3 +1,5 @@
 # virtual env
 .venv/
 .env
+tests/__pycache__
+src/__pycache__
